@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="inputNum">
+            <button onclick="toDisplay('7')">7</button>
+            <button onclick="toDisplay('8')">8</button>
+            <button onclick="toDisplay('9')">9</button>
+            
+            <button onclick="toDisplay('4')">4</button>
+            <button onclick="toDisplay('5')">5</button>
+            <button onclick="toDisplay('6')">6</button>
+            
+            <button onclick="toDisplay('1')">1</button>
+            <button onclick="toDisplay('2')">2</button>
+            <button onclick="toDisplay('3')">3</button>
+            
+            <button onclick="toDisplay('.')">.</button>
+            <button onclick="toDisplay('0')">0</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+        <div class="operator">
+            <button class="operator1" onclick="clearDisplay()">AC</button>
+            <button class="operator5" onclick="toDisplay('+')">+</button>
+            <button class="operator4" onclick="toDisplay('-')">-</button>
+            <button class="operator2" onclick="toDisplay('/')">/</button>
+            <button class="operator3" onclick="toDisplay('*')">*</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
